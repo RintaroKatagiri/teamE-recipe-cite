@@ -1,0 +1,37 @@
+<!-- いいねボタンとカウンターの追加 -->
+<div class="like-section">
+    <button id="like-button" class="like-button">
+        <i class="like-icon">♥</i>
+        <span>いいね!</span>
+    </button>
+    <span id="like-counter" class="like-counter">0</span>
+    <span class="like-text">人が「いいね」しました</span>
+</div>
+
+<!-- コメントフォームの追加 -->
+<div class="comment-section">
+    <h3>コメントを残す</h3>
+    <form id="comment-form">
+        <div class="form-group">
+            <label for="comment-name">お名前（ニックネーム）</label>
+            <input type="text" id="comment-name" name="name" placeholder="お名前またはニックネーム" required>
+        </div>
+        <div class="form-group">
+            <label for="comment-email">メールアドレス（非公開）</label>
+            <input type="email" id="comment-email" name="email" placeholder="メールアドレス" required>
+        </div>
+        <div class="form-group">
+            <label for="comment-text">コメント</label>
+            <textarea id="comment-text" name="comment" rows="4" placeholder="コメントを入力してください" required></textarea>
+        </div>
+        <button type="submit" class="comment-submit">コメントを投稿</button>
+    </form>
+</div>
+
+<!-- コメント表示エリア -->
+<div id="comments-container">
+    <h3>コメント一覧</h3>
+    <div class="comments-list">
+        <!-- コメントはJavaScriptによって動的に挿入されます -->
+    </div>
+</div>

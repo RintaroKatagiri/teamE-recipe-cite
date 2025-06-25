@@ -1,0 +1,404 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #2b2a27;
+    font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #2b2a27;
+}
+
+/*-------------------------------------------
+Nav
+-------------------------------------------*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5vw;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 0 4vw;
+}
+
+.navbar a {
+    text-decoration: none;
+
+}
+
+.navbar i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+    height: 3vw;
+    font-size: 2vw;
+    color: #fff;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.navbar .login-button {
+    font-size: 1vw;
+    color: #fff;
+    background-color: white;
+    padding: 0.5vw 1vw;
+    text-align: center;
+    border: solid 1px black;
+}
+
+.navbar .nuv-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    border: solid 1px black;
+}
+
+.navbar .add-button {
+    font-size: 1vw;
+    color: #fff;
+    background-color: white;
+    padding: 0.5vw 1vw;
+    text-align: center;
+    justify-content: center;
+    border: solid 1px black;
+}
+
+
+#nav-text {
+    opacity: 0;
+    visibility: visible;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    color: #333;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-left: 0vw;
+    width: 65vw;
+
+}
+
+
+
+/*-------------------------------------------
+Recipe
+-------------------------------------------*/
+.flex .menuTitle {
+    display: flex;
+    margin: 5vw 5vw 0 5vw;
+    gap: 5vw;
+}
+
+.flex .menuTitle .image {
+    width: 30vw;
+    height: 500px;
+}
+
+.flex .menuTitle .image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    vertical-align: bottom;
+    border-radius: 20px;
+}
+
+.flex .menuTitle .text {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex .menuTitle .text {
+    width: 55vw;
+}
+
+.flex .menuTitle .text .author .icon img {
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.flex .menuTitle .author {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+.flex .recipe .ingredients {
+    width: 30vw;
+}
+
+.flex .recipe .how-to {
+    width: 55vw;
+    margin-bottom: 100px;
+}
+
+.flex .recipe .content-title {
+    border-bottom: solid 1px #ccc;
+    font-size: 1.25rem;
+    padding-bottom: 5px;
+    margin: 40px 0 15px 0;
+}
+
+
+
+.flex .recipe .ingredient-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex .recipe {
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin: 0 5vw;
+    gap: 5vw;
+}
+
+.flex .recipe .ingredients {
+    width: 30vw;
+}
+
+.flex .recipe .ingredients .ingredient-list dd {
+    font-weight: bold;
+}
+
+/*
+border-bottom に「dotted」を指定して点線にする
+*/
+.flex .recipe .ingredient-list dt {
+    width: 60%;
+    border-bottom: dotted 1px #ccc;
+    padding: 6px 0;
+}
+
+.flex .recipe .ingredient-list dd {
+    width: 40%;
+    border-bottom: dotted 1px #ccc;
+    padding: 6px 0;
+    text-align: right;
+}
+
+.flex .recipe .how-to .step-list .step-row {
+    display: flex;
+    flex-direction: row;
+    object-fit: cover;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.flex .recipe .how-to .step-list .step-row .step .circle {
+    display: flex;
+    background-color: #2b2a27;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 2vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.flex .recipe .how-to .step-list .step-row .step img {
+    width: 13vw;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.flex .recipe .how-to .step-list .step-row .step p {
+    width: 13vw;
+    height: 7vw;
+}
+
+/*-------------------------------------------
+Button
+-------------------------------------------*/
+.btn {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/*
+「display: inline-block;」でaタグに幅と高さを持たせる。
+paddingでボタンのサイズを調整。
+*/
+.btn a {
+    display: inline-block;
+    border: solid 1px #2b2a27;
+    font-size: 0.875rem;
+    padding: 18px 60px;
+    text-decoration: none;
+}
+
+/*-------------------------------------------
+Footer
+-------------------------------------------*/
+#footer {
+    font-size: 0.75rem;
+    padding: 20px;
+    text-align: center;
+}
+
+/*
+リンクはul、liタグで記述
+SNSのリンク集という、一つの意味をもったリスト群になるので、ul、liタグでグルーピング
+※リストタグを使用しなくても問題ないが、使用した方が検索エンジンに対して
+より適切に意味を伝えることができると考えリストタグを選択しています。
+*/
+#footer .sns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#footer .sns li {
+    margin: 0 10px;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 834px) {
+
+    /*-------------------------------------------
+  Nav
+  -------------------------------------------*/
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 7vw;
+        background-color: rgb(216, 216, 216);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        padding: 0 4vw;
+    }
+
+    .navbar .login-button {
+        font-size: 2vw;
+        color: #fff;
+        background-color: white;
+        padding: 0.5vw 1vw;
+        text-align: center;
+        border: solid 1px black;
+    }
+
+    .navbar .add-button {
+        font-size: 2vw;
+        color: #fff;
+        background-color: white;
+        padding: 0.5vw 1vw;
+        text-align: center;
+        justify-content: center;
+        border: solid 1px black;
+    }
+
+    #nav-text {
+        opacity: 0;
+        visibility: visible;
+        transition: opacity 0.6s ease, visibility 0.6s ease;
+        color: #333;
+        font-size: 30vm;
+        font-weight: bold;
+        margin-left: 0vw;
+        width: 55vw;
+
+    }
+
+    /*-------------------------------------------
+  Menutitle
+  -------------------------------------------*/
+    .flex .menuTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 5vw 0vw 2.5vw 0vw;
+    }
+
+    .flex .menuTitle .image {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .flex .menuTitle .image img {
+        width: 100%;
+        height: 500px;
+        vertical-align: bottom;
+        border-radius: 0px;
+    }
+
+    .flex .menuTitle .text {
+        width: 95%;
+        height: 300px;
+        vertical-align: bottom;
+        margin: 2.5vw 2.5vw 2.5vw 2.5vw;
+    }
+
+    .flex .recipe {
+        display: flex;
+        flex-direction: column;
+        margin: 2.5vw 2.5vw 2.5vw 2.5vw;
+    }
+
+    .flex .recipe .ingredients {
+        width: 100%;
+    }
+
+    .flex .recipe .how-to {
+        width: 100%;
+    }
+
+    .flex .recipe .how-to .step-list .step-row {
+        display: flex;
+        flex-direction: column;
+        object-fit: cover;
+        border-radius: 10px;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .flex .recipe .how-to .step-list .step-row .step {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .flex .recipe .how-to .step-list .step-row .step img {
+        order: 3;
+        width: 20%;
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    .flex .recipe .how-to .step-list .step-row .step p {
+        width: 100%;
+        order: 2;
+    }
+
+
+}
