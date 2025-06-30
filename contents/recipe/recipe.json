@@ -1,0 +1,506 @@
+[
+    {
+        "title": "オムライス",
+        "recipeMainImgDir": "../../img/recipe/recipe1_main.jpg",
+        "recipeDesc": "ふわふわの卵とケチャップライスが絶妙に絡む、定番のオムライスです。",
+        "recipeAuthor": "注文の多い料理店",
+        "recipeAuthorImgDir": "../../img/recipe/recipe1_icon.jpg",
+        "ingredientTitle": "材料（2人分）",
+        "ingredients": [
+            {
+                "name": "卵",
+                "amount": "4個"
+            },
+            {
+                "name": "温かいご飯",
+                "amount": "約300g"
+            },
+            {
+                "name": "鶏もも肉",
+                "amount": "約80g（一口大）"
+            },
+            {
+                "name": "玉ねぎ",
+                "amount": "1/4個（粗めのみじん切り）"
+            },
+            {
+                "name": "ピーマン",
+                "amount": "1個（みじん切り、お好みで）"
+            },
+            {
+                "name": "ケチャップ",
+                "amount": "大さじ3〜4（ライス用・仕上げ用）"
+            },
+            {
+                "name": "サラダ油",
+                "amount": "大さじ1（作業用）"
+            },
+            {
+                "name": "バター",
+                "amount": "10g（卵に塗る or ライス仕上げ）"
+            },
+            {
+                "name": "牛乳",
+                "amount": "大さじ1（卵液をふんわりと仕上げるため）"
+            },
+            {
+                "name": "塩・こしょう",
+                "amount": "少々（味調整用）"
+            }
+        ],
+        "step1": {
+            "imgDir": "../../img/recipe/recipe1_howto1.jpg",
+            "desc": "鶏肉の黄色い脂肪を取り除き、一口大に切る。玉ねぎとピーマンもみじん切りにする。"
+        },
+        "step2": {
+            "imgDir": "../../img/recipe/recipe1_howto2.jpg",
+            "desc": "フライパンに油を熱し、鶏肉→玉ねぎ→ピーマンの順に炒め、塩胡椒で下味をつける。"
+        },
+        "step3": {
+            "imgDir": "../../img/recipe/recipe1_howto3.jpg",
+            "desc": "ご飯を加えほぐしながら炒め、ケチャップも入れてさらに炒め、味を整えて器に取り出す。"
+        },
+        "step4": {
+            "imgDir": "../../img/recipe/recipe1_howto4.jpg",
+            "desc": "ボウルに卵2個＋牛乳大さじ1＋塩少々を入れ、白身がなくなるまでしっかり混ぜる。"
+        },
+        "step5": {
+            "imgDir": "../../img/recipe/recipe1_howto5.jpg",
+            "desc": "別のフライパンにサラダ油＆バターを熱し、卵液を一気に流し込み、箸やゴムベラで大きく混ぜながら半熟に仕上げる。"
+        },
+        "step6": {
+            "imgDir": "../../img/recipe/recipe1_howto6.jpg",
+            "desc": "半熟卵の上にチキンライス半量を「ラグビーボール状」にのせる。"
+        },
+        "step7": {
+            "imgDir": "../../img/recipe/recipe1_howto7.jpg",
+            "desc": "フライパンの縁で奥→手前の順に卵をかぶせ、皿に切れ目が下向きになるように移す。"
+        },
+        "step8": {
+            "imgDir": "../../img/recipe/recipe1_howto8.jpg",
+            "desc": "仕上げにケチャップをかけたら完成。お好みでバターケチャップソースでも◎"
+        }
+    },
+    {
+        "title": "カレーライス",
+        "recipeMainImgDir": "../../img/recipe/recipe2_main.jpg",
+        "recipeDesc": "野菜と肉の旨味が溶け込んだ、家庭で作る定番のカレーライスです。",
+        "recipeAuthor": "注文の多い料理店",
+        "recipeAuthorImgDir": "../../img/recipe/recipe1_icon.jpg",
+        "ingredientTitle": "材料（2人分）",
+        "ingredients": [
+            {
+                "name": "玉ねぎ",
+                "amount": "2個（薄切り）"
+            },
+            {
+                "name": "にんじん",
+                "amount": "1本（一口大の乱切り）"
+            },
+            {
+                "name": "じゃがいも",
+                "amount": "2個（一口大の乱切り）"
+            },
+            {
+                "name": "肉（牛または豚）",
+                "amount": "200g（一口大）"
+            },
+            {
+                "name": "にんにく",
+                "amount": "1片（みじん切り、お好みで）"
+            },
+            {
+                "name": "サラダ油",
+                "amount": "大さじ1"
+            },
+            {
+                "name": "水",
+                "amount": "600ml"
+            },
+            {
+                "name": "カレールウ",
+                "amount": "100g（4皿分）"
+            },
+            {
+                "name": "ご飯",
+                "amount": "茶碗4杯分"
+            },
+            {
+                "name": "塩・こしょう",
+                "amount": "少々（味調整用）"
+            }
+        ],
+        "step1": {
+            "imgDir": "../../img/recipe/recipe2_howto1.jpg",
+            "desc": "玉ねぎを薄切り、にんじんとじゃがいもを一口大の乱切りにし、肉も一口大に切る。"
+        },
+        "step2": {
+            "imgDir": "../../img/recipe/recipe2_howto2.jpg",
+            "desc": "鍋にサラダ油とにんにくを熱し、玉ねぎを中火でしんなりと透き通るまで炒める。"
+        },
+        "step3": {
+            "imgDir": "../../img/recipe/recipe2_howto3.jpg",
+            "desc": "にんじん、じゃがいも、肉を加え、肉の色が変わるまで炒め合わせる。"
+        },
+        "step4": {
+            "imgDir": "../../img/recipe/recipe2_howto4.jpg",
+            "desc": "水を加えて沸騰させ、浮いてくるアクをおたまで取り除きながら、中火で野菜が柔らかくなるまで煮る。"
+        },
+        "step5": {
+            "imgDir": "../../img/recipe/recipe2_howto5.jpg",
+            "desc": "弱火にしてカレールウを割り入れ、ルウが溶けるまで静かに混ぜる。"
+        },
+        "step6": {
+            "imgDir": "../../img/recipe/recipe2_howto6.jpg",
+            "desc": "とろみが出るまで弱火でさらに5分ほど煮込み、塩・こしょうで味を整える。"
+        },
+        "step7": {
+            "imgDir": "../../img/recipe/recipe2_howto7.jpg",
+            "desc": "皿に茶碗で盛ったご飯をラグビーボール状に整えて盛り付ける。"
+        },
+        "step8": {
+            "imgDir": "../../img/recipe/recipe2_howto8.jpg",
+            "desc": "カレーをご飯の上からかけ、お好みで福神漬けやらっきょうを添えたら完成。"
+        }
+    },
+    {
+        "title": "マルゲリータピザ",
+        "recipeMainImgDir": "../../img/recipe/recipe3_main.jpg",
+        "recipeDesc": "モッツァレラチーズとバジルの香りが際立つ、本格的なイタリアンマルゲリータピザです。",
+        "recipeAuthor": "注文の多い料理店",
+        "recipeAuthorImgDir": "../../img/recipe/recipe3_icon.jpg",
+        "ingredientTitle": "材料（2人分）",
+        "ingredients": [
+            {
+                "name": "強力粉",
+                "amount": "200g"
+            },
+            {
+                "name": "ドライイースト",
+                "amount": "3g"
+            },
+            {
+                "name": "砂糖",
+                "amount": "小さじ1/2（約2g）"
+            },
+            {
+                "name": "塩",
+                "amount": "小さじ1（約5g）"
+            },
+            {
+                "name": "ぬるま湯",
+                "amount": "120ml"
+            },
+            {
+                "name": "オリーブオイル",
+                "amount": "大さじ1"
+            },
+            {
+                "name": "トマトソース",
+                "amount": "100g"
+            },
+            {
+                "name": "モッツァレラチーズ",
+                "amount": "100g"
+            },
+            {
+                "name": "バジルの葉",
+                "amount": "6～8枚"
+            },
+            {
+                "name": "オリーブオイル（仕上げ用）",
+                "amount": "小さじ1"
+            },
+            {
+                "name": "塩・こしょう（仕上げ用）",
+                "amount": "少々"
+            }
+        ],
+        "step1": {
+            "imgDir": "../../img/recipe/recipe3_howto1.jpg",
+            "desc": "ボウルに強力粉200g、ドライイースト3g、砂糖小さじ1/2、塩小さじ1を入れ、混ぜ合わせる。"
+        },
+        "step2": {
+            "imgDir": "../../img/recipe/recipe3_howto2.jpg",
+            "desc": "ぬるま湯120mlとオリーブオイル大さじ1を加え、生地がまとまるまで混ぜ、台に移して約10分間こねる。その後、ボウルに戻し、ラップをかけて室温で約1時間発酵させる（2倍になるまで）。"
+        },
+        "step3": {
+            "imgDir": "../../img/recipe/recipe3_howto3.jpg",
+            "desc": "発酵した生地を軽く押してガスを抜き、2等分に分けて丸め、それぞれボウルに入れ、布をかけてさらに30分休ませる。"
+        },
+        "step4": {
+            "imgDir": "../../img/recipe/recipe3_howto4.jpg",
+            "desc": "オーブンを250℃に予熱し、ピザストーンまたは天板を入れて熱しておく。"
+        },
+        "step5": {
+            "imgDir": "../../img/recipe/recipe3_howto5.jpg",
+            "desc": "打ち粉をした台の上で生地を手で中央から外側に向かって伸ばし、直径20～25cmほどの円形に整え、縁を立ち上げる。"
+        },
+        "step6": {
+            "imgDir": "../../img/recipe/recipe3_howto6.jpg",
+            "desc": "生地の内側全体にトマトソース100gを均一に塗り広げる。"
+        },
+        "step7": {
+            "imgDir": "../../img/recipe/recipe3_howto7.jpg",
+            "desc": "トマトソースの上にスライスしたモッツァレラチーズ100gとバジルの葉を散らす。"
+        },
+        "step8": {
+            "imgDir": "../../img/recipe/recipe3_howto8.jpg",
+            "desc": "予熱したオーブンで約10分焼き、焼き上がったらオリーブオイル小さじ1をまわしかけ、塩・こしょうを軽く振って完成。"
+        }
+    },
+    {
+        "title": "唐揚げ",
+        "recipeMainImgDir": "../../img/recipe/recipe4_main.jpg",
+        "recipeDesc": "外はサクサク、中はジューシーな、定番の鶏の唐揚げです。",
+        "recipeAuthor": "注文の多い料理店",
+        "recipeAuthorImgDir": "../../img/recipe/recipe4_icon.jpg",
+        "ingredientTitle": "材料（2人分）",
+        "ingredients": [
+            {
+                "name": "鶏もも肉",
+                "amount": "300g（一口大）"
+            },
+            {
+                "name": "しょうゆ",
+                "amount": "大さじ2"
+            },
+            {
+                "name": "酒",
+                "amount": "大さじ1"
+            },
+            {
+                "name": "みりん",
+                "amount": "大さじ1"
+            },
+            {
+                "name": "すりおろしにんにく",
+                "amount": "小さじ1/2"
+            },
+            {
+                "name": "すりおろししょうが",
+                "amount": "小さじ1/2"
+            },
+            {
+                "name": "片栗粉",
+                "amount": "大さじ4"
+            },
+            {
+                "name": "揚げ油",
+                "amount": "適量"
+            },
+            {
+                "name": "塩・こしょう",
+                "amount": "少々"
+            },
+            {
+                "name": "レモン",
+                "amount": "1/2個（くし切り、お好みで）"
+            }
+        ],
+        "step1": {
+            "imgDir": "../../img/recipe/recipe4_howto1.jpg",
+            "desc": "鶏もも肉の余分な脂を取り除き、一口大に切る。"
+        },
+        "step2": {
+            "imgDir": "../../img/recipe/recipe4_howto2.jpg",
+            "desc": "ボウルにしょうゆ、酒、みりん、すりおろしにんにく、すりおろししょうがを入れて混ぜ、鶏肉を加えて下味をつけ、15分ほど漬け込む。"
+        },
+        "step3": {
+            "imgDir": "../../img/recipe/recipe4_howto3.jpg",
+            "desc": "別の皿に片栗粉を広げ、漬け込んだ鶏肉をまんべんなくまぶす。"
+        },
+        "step4": {
+            "imgDir": "../../img/recipe/recipe4_howto4.jpg",
+            "desc": "深めの鍋に揚げ油を入れて170℃に熱する（菜箸を入れて小さな泡が出るくらいが目安）。"
+        },
+        "step5": {
+            "imgDir": "../../img/recipe/recipe4_howto5.jpg",
+            "desc": "鶏肉を数個ずつ入れて3分ほど揚げ、一度取り出して油を切る。"
+        },
+        "step6": {
+            "imgDir": "../../img/recipe/recipe4_howto6.jpg",
+            "desc": "油の温度を180℃に上げ、再び1～2分揚げて表面をこんがりと仕上げる。"
+        },
+        "step7": {
+            "imgDir": "../../img/recipe/recipe4_howto7.jpg",
+            "desc": "網の上またはキッチンペーパーを敷いたバットに取り出し、余分な油をしっかり切る。"
+        },
+        "step8": {
+            "imgDir": "../../img/recipe/recipe4_howto8.jpg",
+            "desc": "皿に唐揚げを盛り付け、レモンを添えたら完成。"
+        }
+    },
+    {
+        "title": "アクアパッツァ",
+        "recipeMainImgDir": "../../img/recipe/recipe5_main.jpg",
+        "recipeDesc": "魚介の旨味が溶け込んだ、白ワイン香るイタリア風スープ仕立てのアクアパッツァです。",
+        "recipeAuthor": "注文の多い料理店",
+        "recipeAuthorImgDir": "../../img/recipe/recipe5_icon.jpg",
+        "ingredientTitle": "材料（2人分）",
+        "ingredients": [
+            {
+                "name": "白身魚（鯛やスズキなど）",
+                "amount": "2切れ（各100〜120g程度）"
+            },
+            {
+                "name": "あさり",
+                "amount": "200g（砂抜き済み）"
+            },
+            {
+                "name": "ミニトマト",
+                "amount": "10個（半分に切る）"
+            },
+            {
+                "name": "にんにく",
+                "amount": "2片（薄切り）"
+            },
+            {
+                "name": "オリーブオイル",
+                "amount": "大さじ2"
+            },
+            {
+                "name": "白ワイン",
+                "amount": "100ml"
+            },
+            {
+                "name": "水",
+                "amount": "100ml"
+            },
+            {
+                "name": "塩・こしょう",
+                "amount": "少々"
+            },
+            {
+                "name": "パセリ（みじん切り）",
+                "amount": "適量"
+            },
+            {
+                "name": "鷹の爪（種を除く）",
+                "amount": "1本（お好みで）"
+            }
+        ],
+        "step1": {
+            "imgDir": "../../img/recipe/recipe5_howto1.jpg",
+            "desc": "白身魚はキッチンペーパーで水気をしっかり拭き取り、両面に塩・こしょうをふる。"
+        },
+        "step2": {
+            "imgDir": "../../img/recipe/recipe5_howto2.jpg",
+            "desc": "深めのフライパンにオリーブオイル大さじ2とにんにく薄切りを入れ、弱火で香りが立つまで加熱する。"
+        },
+        "step3": {
+            "imgDir": "../../img/recipe/recipe5_howto3.jpg",
+            "desc": "中火にして魚を皮目を下にして入れ、こんがりと焼き色がつくまで約2～3分焼く。"
+        },
+        "step4": {
+            "imgDir": "../../img/recipe/recipe5_howto4.jpg",
+            "desc": "魚を裏返し、半分に切ったミニトマトとあさりを周りに加える。"
+        },
+        "step5": {
+            "imgDir": "../../img/recipe/recipe5_howto5.jpg",
+            "desc": "白ワイン100mlを注ぎ入れ、中火でアルコール分を飛ばす。"
+        },
+        "step6": {
+            "imgDir": "../../img/recipe/recipe5_howto6.jpg",
+            "desc": "水100mlを加え、鷹の爪を入れて蓋をし、あさりの口が開くまで約3～4分蒸し煮にする。"
+        },
+        "step7": {
+            "imgDir": "../../img/recipe/recipe5_howto7.jpg",
+            "desc": "蓋を外して弱火にし、スープを少し煮詰めて旨味を凝縮させ、塩・こしょうで味を調える。"
+        },
+        "step8": {
+            "imgDir": "../../img/recipe/recipe5_howto8.jpg",
+            "desc": "器に魚とあさり、トマトを盛り付け、みじん切りパセリを散らして完成。"
+        }
+    },
+    {
+        "title": "麻婆豆腐",
+        "recipeMainImgDir": "../../img/recipe/recipe6_main.jpg",
+        "recipeDesc": "ピリ辛の豆板醤と花椒が香る、本格中華の麻婆豆腐です。",
+        "recipeAuthor": "注文の多い料理店",
+        "recipeAuthorImgDir": "../../img/recipe/recipe6_icon.jpg",
+        "ingredientTitle": "材料（2人分）",
+        "ingredients": [
+            {
+                "name": "絹ごし豆腐",
+                "amount": "1丁（約300g、一口大に切る）"
+            },
+            {
+                "name": "豚ひき肉",
+                "amount": "150g"
+            },
+            {
+                "name": "長ねぎ（白い部分）",
+                "amount": "1/2本（みじん切り）"
+            },
+            {
+                "name": "にんにく",
+                "amount": "1片（みじん切り）"
+            },
+            {
+                "name": "しょうが",
+                "amount": "1片（みじん切り）"
+            },
+            {
+                "name": "豆板醤",
+                "amount": "大さじ1"
+            },
+            {
+                "name": "甜麺醤",
+                "amount": "大さじ1"
+            },
+            {
+                "name": "醤油",
+                "amount": "大さじ1"
+            },
+            {
+                "name": "鶏がらスープ",
+                "amount": "200ml"
+            },
+            {
+                "name": "水溶き片栗粉",
+                "amount": "片栗粉大さじ1＋水大さじ2"
+            },
+            {
+                "name": "サラダ油",
+                "amount": "大さじ1"
+            },
+            {
+                "name": "花椒粉（山椒）",
+                "amount": "小さじ1/2"
+            }
+        ],
+        "step1": {
+            "imgDir": "../../img/recipe/recipe6_howto1.jpg",
+            "desc": "豆腐はキッチンペーパーで包み、軽く重しをして5分ほど水気を切り、一口大に切る。"
+        },
+        "step2": {
+            "imgDir": "../../img/recipe/recipe6_howto2.jpg",
+            "desc": "フライパンにサラダ油を熱し、にんにくとしょうが、長ねぎの白い部分を弱火で香りが立つまで炒める。"
+        },
+        "step3": {
+            "imgDir": "../../img/recipe/recipe6_howto3.jpg",
+            "desc": "中火にして豚ひき肉を加え、肉の色が変わるまでほぐしながら炒める。"
+        },
+        "step4": {
+            "imgDir": "../../img/recipe/recipe6_howto4.jpg",
+            "desc": "豆板醤と甜麺醤を加え、ペーストが油になじむまで約1分間炒める。"
+        },
+        "step5": {
+            "imgDir": "../../img/recipe/recipe6_howto5.jpg",
+            "desc": "醤油と鶏がらスープを注ぎ入れ、ひと煮立ちさせる。"
+        },
+        "step6": {
+            "imgDir": "../../img/recipe/recipe6_howto6.jpg",
+            "desc": "切った豆腐をそっと加え、崩さないように優しく混ぜながら中火で2～3分煮る。"
+        },
+        "step7": {
+            "imgDir": "../../img/recipe/recipe6_howto7.jpg",
+            "desc": "水溶き片栗粉を回し入れ、とろみがつくまでゆっくり混ぜ、最後に花椒粉を振る。"
+        },
+        "step8": {
+            "imgDir": "../../img/recipe/recipe6_howto8.jpg",
+            "desc": "器に盛り付け、刻んだ長ねぎの青い部分を散らして完成。"
+        }
+    }
+]
