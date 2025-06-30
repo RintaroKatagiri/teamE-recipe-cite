@@ -10,19 +10,16 @@
     margin: 0 auto;
 }
 
-/* 背景色変更 */
 body {
-    background-color: var(--back-ground-color); /* ←お好きな色に変更 */
+    background-color: var(--back-ground-color);
 }
 
 .works_img{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
-    /* gap: 1.5em; */
 }
 
-/* 余白部分が調整できてない */
 .works_img img{
     max-width:15em;
     width: 100%;
@@ -38,7 +35,7 @@ body {
 }
 .works_img img {
     display: block;
-    margin-bottom: 0.5em;  /* 画像とh3の間に余白 */
+    margin-bottom: 0.5em;
 }
 h3{
     font-size: 16px;
@@ -50,6 +47,7 @@ h1{
     font-size: 32px;
     margin: 0 0 1em 0;
     text-align: center;
+    font-size: var(--title-fontsize);
 }
 
 
@@ -60,22 +58,26 @@ h1{
     margin-bottom: 1em;
 }
 
-/* 共通化できるかも */
 a{
     color:black;
-    /* text-decoration:none; */
 }
 
-
 /* Kitamura Zone */
-/* Kitamura Zone */
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-size: var(--main-fontsize);
+    font-family: var(--main-fontfamily);
+}
 .subtitle{
     display:inline-block;
 }
+
+
 #news a{
     text-decoration: none;
     color:black;
-    
 }
 .main_visual img{
     width: 50%;
@@ -91,13 +93,7 @@ a{
     align-items: center;
     margin: 0 auto;
 }
-.header_right{
-    display:flex;
-    justify-content:space-between;
-}
-.header_right a{
-    margin:0 0.5em;
-}
+
 
 @media (max-width: 600px) {
     .works_img {

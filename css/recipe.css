@@ -173,6 +173,25 @@ Recipe
     gap: 5vw;
 }
 
+#copyMsg {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+#copyMsg.show {
+    opacity: 1;
+}
+
 .recipeContainer .recipe .ingredients {
     width: 30vw;
     background-color: white;
@@ -447,4 +466,25 @@ SP
     }
 
 
+}
+
+/*-------------------------------------------
+Print
+-------------------------------------------*/
+@media print {
+
+    .navbar,
+    #footer {
+        display: none;
+    }
+
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .recipeContainer {
+        margin: 0;
+        padding: 0;
+    }
 }

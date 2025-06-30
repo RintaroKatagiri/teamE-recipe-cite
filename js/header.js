@@ -22,16 +22,18 @@ class SiteHeader extends HTMLElement {
     `;
 
     const wrapper = document.createElement('div');
+    const basePath = `https://rintarokatagiri.github.io/teamE-recipe-cite`;
+
     wrapper.innerHTML = `
       <header>
-        <h1><a href="/homepageProject2">レシピサイト</a></h1>
+        <h1><a href="${basePath}/homepage.html">レシピサイト</a></h1>
         <nav>
-          <a href="/homepageProject2">サイト紹介</a>
-          <a href="/homepageProject2/contents/recipe/recipe1.html">料理一覧</a>
-          <a href="/homepageProject2/contents/news/news.html">ニュース一覧</a>
-          <a href="/homepageProject2/contents/contact/contact.html">お問い合わせ</a>
+          <a href="${basePath}/homepage.html">サイト紹介</a>
+          <a href="${basePath}/contents/recipe/recipe1.html">料理一覧</a>
+          <a href="${basePath}/contents/news/news.html">ニュース一覧</a>
+          <a href="${basePath}/contents/contact/contact.html">お問い合わせ</a>
           <a href="https://www.instagram.com/">
-              <img src="/homepageProject2/img/homepage1/homepage_insta.png">
+              <img src="${basePath}/img/homepage1/homepage_insta.png">
           </a>
         </nav>
       </header>

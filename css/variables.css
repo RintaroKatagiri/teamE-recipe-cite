@@ -1,3 +1,5 @@
+    @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+
 :root {
     --main-color: #ffafcc;
     --sub-color: #ffc8dd;
@@ -9,4 +11,5 @@
 
     --header-bg-color: #e6e6e6;
     --header-text-color: rgb(0, 0, 0);
+    --main-fontfamily:'Shippori Mincho B1', serif;
 }

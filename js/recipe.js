@@ -75,10 +75,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <p>${recipe.recipeAuthor}</p>
             </div>
             <div class="description">
-                これ作ったらめっちゃおいしい
+                これ作ったらめっちゃおいしい。なんでかわかります？
+                これはですね、この私がめっちゃくちゃ考えたからなんですよ！！
+                なにがなんでもおいしいんです。
+                もうそれはそれはおいしいんです。
+
             </div>
             <div class="reaction">
-            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            <button id= "copyLinkBtn"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+            <div id="copyMsg">リンクをコピーしました</div>
             <i class="fa-solid fa-print"></i>
             <h3>${fav}いいね</h3>
             </div>
@@ -145,6 +150,39 @@ document.addEventListener('DOMContentLoaded', async () => {
     </div>
     `
 
+    const btn = document.getElementById('copyLinkBtn');
+    const msg = document.getElementById('copyMsg');
 
+    if (btn && msg) {
+        console.log("Copy button or message element found.");
+        btn.addEventListener('click', async function () {
+            const url = window.location.href;
+            try {
+                await navigator.clipboard.writeText(url);
+            } catch (e) {
+                const ta = document.createElement('textarea');
+                ta.value = url;
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+            }
+
+            msg.classList.add('show');
+
+            setTimeout(function () {
+                msg.classList.remove('show');
+            }, 2000);
+        });
+    } else {
+        console.error("Copy button or message element not found.");
+    }
+
+    const printIcon = document.querySelector('.fa-print');
+    if (printIcon) {
+        printIcon.addEventListener('click', () => {
+            window.print();
+        });
+    }
 
 });
