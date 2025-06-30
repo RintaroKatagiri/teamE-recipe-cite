@@ -168,7 +168,7 @@
         "recipeMainImgDir": "../../img/recipe/recipe3_main.jpg",
         "recipeDesc": "モッツァレラチーズとバジルの香りが際立つ、本格的なイタリアンマルゲリータピザです。",
         "recipeAuthor": "注文の多い料理店",
-        "recipeAuthorImgDir": "../../img/recipe/recipe3_icon.jpg",
+        "recipeAuthorImgDir": "../../img/recipe/recipe1_icon.jpg",
         "ingredientTitle": "材料（2人分）",
         "ingredients": [
             {
@@ -254,7 +254,7 @@
         "recipeMainImgDir": "../../img/recipe/recipe4_main.jpg",
         "recipeDesc": "外はサクサク、中はジューシーな、定番の鶏の唐揚げです。",
         "recipeAuthor": "注文の多い料理店",
-        "recipeAuthorImgDir": "../../img/recipe/recipe4_icon.jpg",
+        "recipeAuthorImgDir": "../../img/recipe/recipe1_icon.jpg",
         "ingredientTitle": "材料（2人分）",
         "ingredients": [
             {
@@ -336,7 +336,7 @@
         "recipeMainImgDir": "../../img/recipe/recipe5_main.jpg",
         "recipeDesc": "魚介の旨味が溶け込んだ、白ワイン香るイタリア風スープ仕立てのアクアパッツァです。",
         "recipeAuthor": "注文の多い料理店",
-        "recipeAuthorImgDir": "../../img/recipe/recipe5_icon.jpg",
+        "recipeAuthorImgDir": "../../img/recipe/recipe1_icon.jpg",
         "ingredientTitle": "材料（2人分）",
         "ingredients": [
             {
@@ -418,7 +418,7 @@
         "recipeMainImgDir": "../../img/recipe/recipe6_main.jpg",
         "recipeDesc": "ピリ辛の豆板醤と花椒が香る、本格中華の麻婆豆腐です。",
         "recipeAuthor": "注文の多い料理店",
-        "recipeAuthorImgDir": "../../img/recipe/recipe6_icon.jpg",
+        "recipeAuthorImgDir": "../../img/recipe/recipe1_icon.jpg",
         "ingredientTitle": "材料（2人分）",
         "ingredients": [
             {
