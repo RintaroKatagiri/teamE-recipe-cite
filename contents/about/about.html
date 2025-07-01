@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サイト紹介 | 味彩（あじさい）</title>
+    <link rel="stylesheet" href="../../css/variables.css">
+    <style>
+        /* 全体のスタイル */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--back-ground-color);
+            font-size: var(--main-fontsize);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--main-color);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ヘッダーのスタイル */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }        .logo {
+            font-size: calc(var(--title-fontsize) * 0.9);
+            font-weight: bold;
+            color: var(--main-color);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-menu li {
+            margin-left: 1.5rem;
+        }
+
+        .nav-menu a {
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: var(--main-color);
+            text-decoration: none;
+        }
+
+        /* メインコンテンツ */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* About セクション */
+        .about-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }        .section-title {
+            color: var(--main-color);
+            font-size: var(--title-fontsize);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--sub-color);
+        }
+
+        .about-content {
+            margin-bottom: 2rem;
+        }
+
+        /* ミッションセクション */
+        .mission-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .mission-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .mission-point {
+            background-color: var(--back-ground-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--main-color);
+        }        .mission-point h3 {
+            color: var(--main-color);
+            margin-bottom: 1rem;
+            font-size: calc(var(--title-fontsize) * 0.6);
+        }
+
+        /* 編集者セクション */
+        .editor-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .editors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .editor-card {
+            background-color: var(--back-ground-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .editor-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .editor-image {
+            height: 200px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 1.2rem;
+        }
+
+        .editor-info {
+            padding: 1.5rem;
+        }        .editor-name {
+            font-size: calc(var(--main-fontsize) * 1.3);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .editor-role {
+            color: var(--main-color);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            font-size: calc(var(--main-fontsize) * 1.1);
+        }
+
+        .editor-bio {
+            font-size: var(--main-fontsize);
+            color: var(--text-color);
+        }
+
+        /* フッターのスタイル */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 3rem 1rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }        .footer-section h4 {
+            font-size: calc(var(--title-fontsize) * 0.55);
+            margin-bottom: 1rem;
+            color: var(--main-color);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .copyright {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding-top: 1rem;
+            border-top: 1px solid #444;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        /* レスポンシブデザイン */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            
+            .logo {
+                margin-bottom: 1rem;
+            }
+            
+            .nav-menu {
+                width: 100%;
+                justify-content: space-around;
+            }
+            
+            .nav-menu li {
+                margin: 0;
+            }
+            
+            .mission-points {
+                grid-template-columns: 1fr;
+            }
+            
+            .editors-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script src="../../js/components.js"></script>
+</head>
+<body>    <header>
+        <div class="header-container">
+            <h1 class="logo">味彩（あじさい）</h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../../homepage.html">ホーム</a></li>
+                    <li><a href="../recipe/recipe1.html">レシピ</a></li>
+                    <li><a href="../news/news.html">ニュース</a></li>
+                    <li><a href="about.html" class="active">サイト紹介</a></li>
+                    <li><a href="../contact/contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>        <section class="about-section">
+            <h2 class="section-title">サイト紹介</h2>
+            <div class="about-content">
+                <p>「味彩（あじさい）」は、その名の通り、多彩な「味わい」と「彩り」にあふれた料理の世界をお届けする総合的な料理情報サイトです。料理愛好家から初心者まで、あらゆる方に向けて2023年に発足し、四季折々の食材を活かした日本全国の食文化や最新の料理トレンドを幅広く紹介しています。</p>
+                <br>
+                <p>私たちは、季節の移ろいと共に変化する食材の魅力を伝え、料理を通じて人々の生活をより豊かに彩ることを目指しています。プロの料理人や栄養士、食品専門家など、様々な分野のエキスパートが監修するレシピや記事を提供し、読者の皆様の毎日の食卓に新たな発見と喜びをお届けします。</p>
+                <br>
+                <p>また、持続可能な食生活や地産地消の推進、食品ロス削減など、現代社会における食の課題にも積極的に取り組み、未来へつながる食文化の創造と発展に貢献していきます。「味彩」の名のもとに、日本の四季と共に歩む豊かな食生活を提案しています。</p>
+            </div>
+        </section>        <section class="mission-section">
+            <h2 class="section-title">私たちのミッション</h2>
+            <div class="mission-points">
+                <div class="mission-point">
+                    <h3>食の楽しさを広める</h3>
+                    <p>料理の楽しさを多くの人に知ってもらい、日々の食事を特別なものにするためのアイデアやインスピレーションを提供します。初心者にもわかりやすく、プロにも参考になるコンテンツを心がけています。</p>
+                </div>
+                <div class="mission-point">
+                    <h3>健康的な食生活の推進</h3>
+                    <p>栄養バランスのとれた食事の重要性を伝え、健康的な食習慣づくりをサポートします。専門家監修のもと、科学的根拠に基づいた栄養情報を発信しています。</p>
+                </div>
+                <div class="mission-point">
+                    <h3>持続可能な食文化の創造</h3>
+                    <p>環境に配慮した食材選びや調理法、フードロス削減のためのアイデアなど、地球環境と調和した食生活のあり方を提案しています。次世代に繋げる食文化の創造を目指します。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2 class="section-title">サイト名の由来</h2>
+            <div class="about-content">
+                <p>「味彩（あじさい）」という名前には、私たちの思いがこめられています。「味わい」と「彩り」を掛け合わせたこの名前は、多様な料理の味わいと季節の移ろいによる彩りを表現しています。</p>
+                <br>
+                <p>日本では、紫陽花（あじさい）の花が梅雨の季節を彩り、四季の変化を感じさせてくれます。それと同じように、私たちのサイトが読者の皆様の食卓に季節感あふれる彩りを添え、様々な味わいの発見をお手伝いしたいという願いを込めました。</p>
+                <br>
+                <p>また、紫陽花の花言葉には「移り気」「七変化」といった意味がありますが、これは料理の多様性や創造性、そして常に新しい発見をお届けしたいという私たちの姿勢にも通じています。様々な色に変化する紫陽花のように、読者の皆様の多様なニーズに応える情報を提供し続けます。</p>
+            </div>
+        </section>        <section class="editor-section">
+            <h2 class="section-title">味彩を彩る編集者たち</h2>
+            <div class="editors-grid">
+                <div class="editor-card">
+                    <div class="editor-image">編集者の画像</div>
+                    <div class="editor-info">
+                        <h3 class="editor-name">山田 太郎</h3>
+                        <div class="editor-role">編集長</div>
+                        <p class="editor-bio">元レストランシェフ。20年以上の料理経験を持ち、和食からイタリアン、フレンチまで幅広いジャンルに精通。「誰もが簡単においしく作れるレシピ」をモットーに記事を監修しています。</p>
+                    </div>
+                </div>
+
+                <div class="editor-card">
+                    <div class="editor-image">編集者の画像</div>
+                    <div class="editor-info">
+                        <h3 class="editor-name">佐藤 花子</h3>
+                        <div class="editor-role">料理研究家</div>
+                        <p class="editor-bio">料理教室を主宰する傍ら、食材の選び方や基本的な調理技術に関する記事を担当。特に日本の伝統食や発酵食品に造詣が深く、「伝統を現代に活かす」をテーマに執筆しています。</p>
+                    </div>
+                </div>
+
+                <div class="editor-card">
+                    <div class="editor-image">編集者の画像</div>
+                    <div class="editor-info">
+                        <h3 class="editor-name">田中 健太</h3>
+                        <div class="editor-role">フードフォトグラファー</div>
+                        <p class="editor-bio">料理写真の撮影を担当。「食べたくなる写真」をモットーに、料理の魅力を視覚的に伝えることに専念。インスタグラムでも人気のフォトグラファーとして活躍中です。</p>
+                    </div>
+                </div>
+
+                <div class="editor-card">
+                    <div class="editor-image">編集者の画像</div>
+                    <div class="editor-info">
+                        <h3 class="editor-name">高橋 美咲</h3>
+                        <div class="editor-role">管理栄養士</div>
+                        <p class="editor-bio">病院での勤務経験を活かし、健康的な食事や特定の健康課題に対応したレシピの開発を担当。科学的な観点から「おいしく、健康に」をサポートする記事を執筆しています。</p>
+                    </div>
+                </div>
+
+                <div class="editor-card">
+                    <div class="editor-image">編集者の画像</div>
+                    <div class="editor-info">
+                        <h3 class="editor-name">鈴木 大輔</h3>
+                        <div class="editor-role">食文化研究家</div>
+                        <p class="editor-bio">各地の郷土料理や食文化に関する記事を担当。海外の食文化や歴史的な料理についての研究も行い、「食の多様性と文化的背景」をテーマにコンテンツを制作しています。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>    <!-- フッターコンポーネント -->
+    <div id="footer-placeholder"></div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // フッターコンポーネントの内容を設定
+            const footerPlaceholder = document.getElementById('footer-placeholder');
+            if (footerPlaceholder) {
+                footerPlaceholder.innerHTML = footerHTML;
+                
+                // 年を現在の年に更新
+                const yearElement = document.querySelector('#current-year');
+                if (yearElement) {
+                    const currentYear = new Date().getFullYear();
+                    yearElement.textContent = currentYear;
+                }
+                
+                // 最終更新日を設定
+                const updateElement = document.querySelector('#last-update');
+                if (updateElement) {
+                    const today = new Date();
+                    const year = today.getFullYear();
+                    const month = today.getMonth() + 1;
+                    const day = today.getDate();
+                    updateElement.textContent = `${year}年${month}月${day}日`;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

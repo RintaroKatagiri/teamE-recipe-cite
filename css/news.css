@@ -1,0 +1,882 @@
+/* 全体のスタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--back-ground-color);
+    font-size: var(--main-fontsize);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: calc(var(--title-fontsize) * 0.9);
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 1.5rem;
+}
+
+.nav-menu a {
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+/* メインコンテンツ */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* 記事のスタイル */
+.news-article {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.article-header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.article-header h2 {
+    font-size: var(--title-fontsize);
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.article-meta {
+    color: #666;
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.article-content {
+    margin-bottom: 2rem;
+}
+
+.article-content h3 {
+    font-size: calc(var(--title-fontsize) * 0.7);
+    margin: 1.5rem 0 1rem;
+    color: #333;
+}
+
+.article-content h4 {
+    font-size: calc(var(--title-fontsize) * 0.5);
+    margin: 1.2rem 0 0.8rem;
+    color: #444;
+}
+
+.article-content p {
+    margin-bottom: 1rem;
+}
+
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ニュースハイライト */
+.news-highlight {
+    background-color: var(--back-ground-color);
+    border-left: 4px solid var(--main-color);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+/* 専門家引用 */
+.expert-quote {
+    font-style: italic;
+    font-size: calc(var(--main-fontsize) * 1.1);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    border-left: 3px solid var(--main-color);
+    margin: 1.5rem 0;
+    background-color: var(--back-ground-color);
+}
+
+/* 統計情報 */
+.news-stats {
+    background-color: var(--back-ground-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.news-stats h4 {
+    margin-top: 0;
+    color: var(--main-color);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* 情報ボックス */
+.info-box {
+    background-color: var(--back-ground-color);
+    border-left: 4px solid var(--sub-color);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+/* タイムライン */
+.timeline {
+    position: relative;
+    margin: 2rem 0;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #ddd;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+
+/* 記事フッター */
+.article-footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.related-articles {
+    margin-bottom: 2rem;
+}
+
+.related-articles h3 {
+    font-size: calc(var(--title-fontsize) * 0.6);
+    margin-bottom: 1rem;
+}
+
+.related-articles ul {
+    list-style: none;
+}
+
+.related-articles li {
+    margin-bottom: 0.8rem;
+}
+
+.related-articles a {
+    color: var(--main-color);
+}
+
+/* ニュースタグ */
+.news-tags {
+    margin: 1.5rem 0;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    padding: 0.3rem 0.8rem;
+    margin: 0.2rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* ソーシャルシェア */
+.social-share {
+    margin: 2rem 0;
+}
+
+.share-button {
+    display: inline-block;
+    background-color: #3b5998;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    border-radius: 4px;
+    transition: opacity 0.3s;
+}
+
+.share-button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    color: white;
+}
+
+.share-button:nth-child(2) {
+    background-color: #1da1f2;
+}
+
+.share-button:nth-child(3) {
+    background-color: #0077b5;
+}
+
+.share-button:nth-child(4) {
+    background-color: #06c755;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    margin-top: 1.5rem;
+}
+
+.back-button:hover {
+    background-color: var(--sub-color);
+    text-decoration: none;
+}
+
+/* フッター */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 3rem 1rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h4 {
+    font-size: calc(var(--title-fontsize) * 0.55);
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ニュースレター */
+.newsletter {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    flex-grow: 1;
+}
+
+.newsletter button {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: var(--sub-color);
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding-top: 1rem;
+    border-top: 1px solid #444;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* ニュース一覧ページ用スタイル */
+.news-banner {
+    background-color: var(--main-color);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.news-banner h2 {
+    font-size: var(--title-fontsize);
+    margin-bottom: 1rem;
+}
+
+.news-banner p {
+    font-size: calc(var(--main-fontsize) * 1.2);
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.news-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.news-date {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-title {
+    font-size: calc(var(--title-fontsize) * 0.65);
+    margin-bottom: 1rem;
+}
+
+.news-title a {
+    color: var(--text-color);
+}
+
+.news-title a:hover {
+    color: var(--main-color);
+}
+
+.news-excerpt {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    display: inline-block;
+    color: var(--main-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: var(--sub-color);
+}
+
+/* 商品レビュースタイル */
+.product-review {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.product-rating {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.rating-score {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.rating-max {
+    color: var(--text-color);
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+/* 栄養原則リストスタイル */
+.nutrition-principles {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nutrition-principles > li {
+    margin-bottom: 2rem;
+}
+
+/* 栄養データスタイル */
+.nutrition-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.data-item {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    flex-grow: 1;
+    min-width: 200px;
+}
+
+.data-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.data-value {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
+
+.data-note {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-top: 0.3rem;
+}
+
+/* 強調テキスト用スタイル */
+.label-emphasis {
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    margin-right: 0.25rem;
+}
+
+.value-emphasis {
+    font-weight: bold;
+    color: var(--main-color);
+    display: inline-block;
+}
+
+/* 市場トレンドスタイル */
+.market-trend {
+    margin: 2rem 0;
+}
+
+.trend-data {
+    margin-top: 1rem;
+}
+
+.trend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.trend-name {
+    width: 150px;
+    flex-shrink: 0;
+}
+
+.trend-bar {
+    background-color: var(--main-color);
+    color: white;
+    padding: 0.3rem;
+    border-radius: 4px;
+    text-align: center;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    min-width: 50px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/* 低い割合の棒グラフ用のスタイル追加 */
+.trend-bar-low {
+    background-color: var(--sub-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* いいねボタンとカウンターのスタイル */
+.like-section {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.like-button {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.like-button:hover {
+    background-color: #f0f0f0;
+}
+
+.like-button.liked {
+    background-color: #ffe0e0;
+    border-color: #ffb0b0;
+}
+
+.like-button.liked .like-icon {
+    color: #e74c3c;
+}
+
+.like-icon {
+    color: #888;
+    font-size: 1.2rem;
+}
+
+.like-counter {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+/* コメントセクションのスタイル */
+.comment-section {
+    margin: 2rem 0;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+#comment-form {
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.comment-submit {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.comment-submit:hover {
+    background-color: var(--sub-color);
+}
+
+/* コメント一覧のスタイル */
+.comments-list {
+    margin-top: 1.5rem;
+}
+
+.comment {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.comment-author {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.comment-date {
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.comment-body p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .logo {
+        margin-bottom: 1rem;
+    }
+    
+    .nav-menu {
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .nav-menu li {
+        margin: 0;
+    }
+    
+    .article-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .expert-quote {
+        padding: 1rem;
+    }
+    
+    .news-banner {
+        padding: 2rem 1rem;
+    }
+    
+    .news-banner h2 {
+        font-size: 2rem;
+    }
+    
+    .article-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    /* ニュース一覧ページのレスポンシブ対応 */
+    .news-item {
+        padding: 1.5rem;
+    }
+    
+    /* フッターのレスポンシブ対応 */
+    .footer-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    /* タイムラインのレスポンシブ対応 */
+    .timeline {
+        padding-left: 1.5rem;
+    }
+    
+    .timeline-item::before {
+        left: -1.5rem;
+    }
+    
+    /* 商品レビュー・栄養データのレスポンシブ調整 */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .market-trend .trend-data {
+        margin-top: 1rem;
+    }
+    
+    .like-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .comment-header {
+        flex-direction: column;
+    }
+    
+    .comment-date {
+        margin-top: 0.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        flex-wrap: wrap;
+    }
+    
+    .nav-menu li {
+        flex: 1 0 50%;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .article-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .news-banner h2 {
+        font-size: 1.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* 商品レビューのレスポンシブ対応 */
+    .product-review {
+        flex-direction: column;
+    }
+    
+    .product-rating {
+        margin-bottom: 1rem;
+    }
+    
+    /* 栄養データのレスポンシブ対応 */
+    .nutrition-data {
+        flex-direction: column;
+    }
+    
+    .data-item {
+        margin-bottom: 1rem;
+    }
+    
+    /* 市場トレンドグラフのレスポンシブ対応 */
+    .trend-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .trend-name {
+        margin-bottom: 0.3rem;
+    }
+    
+    .trend-bar {
+        margin-left: 0;
+        width: 100% !important;
+    }
+    
+    /* フッターのレスポンシブ対応 */
+    .footer-section {
+        margin-bottom: 2rem;
+    }
+    
+    .social-share {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .share-button {
+        margin: 0.3rem 0;
+    }
+}
