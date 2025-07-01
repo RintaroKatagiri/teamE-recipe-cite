@@ -11,5 +11,9 @@
 
     --header-bg-color: #e6e6e6;
     --header-text-color: rgb(0, 0, 0);
+    --footer-bg-color: #f0f0f0;
+    --footer-text-color: #333;
+
+
     --main-fontfamily:'Shippori Mincho B1', serif;
 }

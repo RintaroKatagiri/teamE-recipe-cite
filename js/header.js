@@ -8,7 +8,6 @@ class SiteHeader extends HTMLElement {
       header {
         background-color: var(--header-bg-color);
         color: var(--header-text-color);
-        padding: 10px;
         width: 100%;
       }
       nav a {
@@ -26,11 +25,11 @@ class SiteHeader extends HTMLElement {
 
     wrapper.innerHTML = `
       <header>
-        <h1><a href="${basePath}/homepage.html">レシピサイト</a></h1>
+        <h1><a href="${basePath}/homepage.html">味彩</a></h1>
         <nav>
           <a href="${basePath}/homepage.html">サイト紹介</a>
           <a href="${basePath}/contents/recipe/recipe1.html">料理一覧</a>
-          <a href="${basePath}/contents/news/news.html">ニュース一覧</a>
+          <a href="${basePath}/contents/news/news.html">ニュース</a>
           <a href="${basePath}/contents/contact/contact.html">お問い合わせ</a>
           <a href="https://www.instagram.com/">
               <img src="${basePath}/img/homepage1/homepage_insta.png">

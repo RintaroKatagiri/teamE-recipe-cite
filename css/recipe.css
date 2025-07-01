@@ -6,7 +6,7 @@ html {
 
 body {
     color: var(--text-color);
-    font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+    font-family: var(--main-fontfamily);
     background-color: var(--back-ground-color);
     font-size: var(--main-fontsize);
 }
