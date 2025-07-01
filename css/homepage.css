@@ -81,13 +81,11 @@ body{
     color:black;
 }
 .main_visual img{
-    width: 50%;
-    height:50%;
+    width: 100%;
+    height:100%;
     object-fit: cover;   
 }
-#chinmo{
-    transform:scale(-1,1)
-}
+
 .main_visual{
     max-width:100%;
     display: flex;

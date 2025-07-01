@@ -78,17 +78,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                 これ作ったらめっちゃおいしい。なんでかわかります？
                 これはですね、この私がめっちゃくちゃ考えたからなんですよ！！
                 なにがなんでもおいしいんです。
-                もうそれはそれはおいしいんです。
+                もうそれはそれはおいしいんです。やっぱりねえ、
+                料理っていうのは愛情が大事なんですよ。
 
             </div>
             <div class="reaction">
             <button id= "copyLinkBtn"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
             <div id="copyMsg">リンクをコピーしました</div>
-            <i class="fa-solid fa-print"></i>
-            <h3>${fav}いいね</h3>
-            </div>
-            <div class="reaction">
-            <i class="fa-solid fa-arrow-up-from-bracket"></i>
             <i class="fa-solid fa-print"></i>
             <h3>${fav}いいね</h3>
             </div>
