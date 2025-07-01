@@ -194,6 +194,7 @@ Recipe
 
 .recipeContainer .recipe .ingredients {
     width: 30vw;
+    height: 700px;
     background-color: white;
     padding: 0 2vw 10px 2vw;
 }

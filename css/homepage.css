@@ -1,7 +1,7 @@
 /* SATO Zone */
 .contents{
-    /* background-color:white; */
-    background-color: var(--header-bg-color);
+    background-color:white;
+    /* background-color: var(--header-bg-color); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,8 +12,11 @@
 }
 
 body {
-    background-color: var(--back-ground-color);
+    background-color: rgb(206, 240, 251);
     margin:0;
+    color: deeppink;
+    font-size: var(--main-fontsize);
+    font-family: var(--main-fontfamily);
 }
 
 .works_img{
@@ -61,25 +64,17 @@ h1{
 }
 
 a{
-    color:black;
+    color:deeppink;
 }
 
 /* Kitamura Zone */
 html{
     scroll-behavior:smooth;
 }
-body{
-    font-size: var(--main-fontsize);
-    font-family: var(--main-fontfamily);
-}
 .subtitle{
     display:inline-block;
 }
 
-
-#news a{
-    color:black;
-}
 .main_visual img{
     width: 100%;
     height:100%;
