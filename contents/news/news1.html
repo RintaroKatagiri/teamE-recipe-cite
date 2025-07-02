@@ -5,22 +5,13 @@
     <title>夏の食材トレンド：専門家が教える旬の野菜活用術 | 味彩（あじさい）</title>
     <link rel="stylesheet" href="../../css/variables.css">
     <link rel="stylesheet" href="../../css/news.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="../../js/components.js"></script>
 </head>
 <body>    <header>
-        <div class="header-container">
-            <h1 class="logo">味彩（あじさい）</h1>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="../../homepage.html">ホーム</a></li>
-                    <li><a href="../recipe/recipe1.html">レシピ</a></li>
-                    <li><a href="news.html" class="active">ニュース</a></li>
-                    <li><a href="../contact/contact.html">お問い合わせ</a></li>
-                </ul>
-            </nav>
-        </div>
+        <site-header></site-header>
     </header>
-
+    
     <main>
         <article class="news-article">
             <div class="article-header">
@@ -150,10 +141,11 @@
                 </div>
                 <a href="news.html" class="back-button">ニュース一覧に戻る</a>
             </div>
-        </article>
-    </main>
+        </article>    </main>
     
     <!-- フッターコンポーネント -->
-    <div id="footer-placeholder"></div>
+    <site-footer></site-footer>
+    <script src="../../js/header.js" defer></script>
+    <script src="../../js/footer.js" defer></script>
 </body>
 </html>

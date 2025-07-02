@@ -1,11 +1,11 @@
     @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
 
 :root {
-    --main-color: #ffafcc;
-    --sub-color: #ffc8dd;
-    --back-ground-color: #ffffe0;
-    --text-color: #1a1a1a;
-    --border-color: #696969;
+    --main-color: #4B89DC; /* メインカラー（青） */
+    --sub-color: #FB6C6C; /* サブカラー（ピンク） */
+    --back-ground-color: rgb(206, 240, 251); /* 薄い青色の背景 */
+    --text-color: #333;
+    --border-color: #4B89DC;
     --title-fontsize: 32px;
     --main-fontsize: 16px;
 

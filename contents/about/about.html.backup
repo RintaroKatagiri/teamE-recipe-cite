@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
+<head>    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>サイト紹介 | 味彩（あじさい）</title>
     <link rel="stylesheet" href="../../css/variables.css">
@@ -14,24 +13,63 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-        
-        body {
-            font-family: var(--main-fontfamily);
+        }        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
             line-height: 1.6;
             color: var(--text-color);
-            background-color: rgb(206, 240, 251);
+            background-color: var(--back-ground-color);
             font-size: var(--main-fontsize);
         }
 
         a {
             text-decoration: none;
-            color: #4B89DC; /* 青色リンク */
+            color: var(--main-color);
         }
 
         a:hover {
             text-decoration: underline;
-            color: #FB6C6C; /* ホバー時ピンク */
+        }
+
+        /* ヘッダーのスタイル */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }        .logo {
+            font-size: calc(var(--title-fontsize) * 0.9);
+            font-weight: bold;
+            color: var(--main-color);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-menu li {
+            margin-left: 1.5rem;
+        }
+
+        .nav-menu a {
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: var(--main-color);
+            text-decoration: none;
         }
 
         /* メインコンテンツ */
@@ -44,19 +82,17 @@
         /* About セクション */
         .about-section {
             background-color: white;
-            border-radius: 32px;
+            border-radius: 8px;
             padding: 2rem;
             margin-bottom: 2rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .section-title {
-            color: #4B89DC; /* 青色タイトル */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }        .section-title {
+            color: var(--main-color);
             font-size: var(--title-fontsize);
             margin-bottom: 1.5rem;
             text-align: center;
             padding-bottom: 0.5rem;
-            border-bottom: 2px solid #FB6C6C; /* ピンクの下線 */
+            border-bottom: 2px solid var(--sub-color);
         }
 
         .about-content {
@@ -66,10 +102,10 @@
         /* ミッションセクション */
         .mission-section {
             background-color: white;
-            border-radius: 32px;
+            border-radius: 8px;
             padding: 2rem;
             margin-bottom: 2rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
 
         .mission-points {
@@ -80,14 +116,12 @@
         }
 
         .mission-point {
-            background-color: rgb(241, 248, 254);
+            background-color: var(--back-ground-color);
             padding: 1.5rem;
-            border-radius: 16px;
-            border-left: 4px solid #4B89DC; /* 青色ボーダー */
-        }
-        
-        .mission-point h3 {
-            color: #4B89DC; /* 青色タイトル */
+            border-radius: 8px;
+            border-left: 4px solid var(--main-color);
+        }        .mission-point h3 {
+            color: var(--main-color);
             margin-bottom: 1rem;
             font-size: calc(var(--title-fontsize) * 0.6);
         }
@@ -95,9 +129,9 @@
         /* 編集者セクション */
         .editor-section {
             background-color: white;
-            border-radius: 32px;
+            border-radius: 8px;
             padding: 2rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
 
         .editors-grid {
@@ -108,34 +142,30 @@
         }
 
         .editor-card {
-            background-color: rgb(241, 248, 254);
-            border-radius: 16px;
+            background-color: var(--back-ground-color);
+            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
-            border-top: 3px solid #4B89DC; /* 青色トップボーダー */
         }
 
         .editor-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(251, 108, 108, 0.2); /* ピンク色の影 */
         }
 
         .editor-image {
             height: 200px;
-            background-color: rgba(75, 137, 220, 0.1); /* 薄い青色の背景 */
+            background-color: #f0f0f0;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #4B89DC; /* 青色テキスト */
+            color: #888;
             font-size: 1.2rem;
         }
 
         .editor-info {
             padding: 1.5rem;
-        }
-        
-        .editor-name {
+        }        .editor-name {
             font-size: calc(var(--main-fontsize) * 1.3);
             font-weight: bold;
             margin-bottom: 0.5rem;
@@ -154,8 +184,74 @@
             color: var(--text-color);
         }
 
+        /* フッターのスタイル */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 3rem 1rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }        .footer-section h4 {
+            font-size: calc(var(--title-fontsize) * 0.55);
+            margin-bottom: 1rem;
+            color: var(--main-color);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .copyright {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding-top: 1rem;
+            border-top: 1px solid #444;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #999;
+        }
+
         /* レスポンシブデザイン */
         @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            
+            .logo {
+                margin-bottom: 1rem;
+            }
+            
+            .nav-menu {
+                width: 100%;
+                justify-content: space-around;
+            }
+            
+            .nav-menu li {
+                margin: 0;
+            }
+            
             .mission-points {
                 grid-template-columns: 1fr;
             }
@@ -165,6 +261,7 @@
             }
         }
     </style>
+    <script src="../../js/components.js"></script>
 </head>
 <body>
     <header>
@@ -181,9 +278,7 @@
                 <br>
                 <p>また、持続可能な食生活や地産地消の推進、食品ロス削減など、現代社会における食の課題にも積極的に取り組み、未来へつながる食文化の創造と発展に貢献していきます。「味彩」の名のもとに、日本の四季と共に歩む豊かな食生活を提案しています。</p>
             </div>
-        </section>
-        
-        <section class="mission-section">
+        </section>        <section class="mission-section">
             <h2 class="section-title">私たちのミッション</h2>
             <div class="mission-points">
                 <div class="mission-point">
@@ -210,9 +305,7 @@
                 <br>
                 <p>また、紫陽花の花言葉には「移り気」「七変化」といった意味がありますが、これは料理の多様性や創造性、そして常に新しい発見をお届けしたいという私たちの姿勢にも通じています。様々な色に変化する紫陽花のように、読者の皆様の多様なニーズに応える情報を提供し続けます。</p>
             </div>
-        </section>
-        
-        <section class="editor-section">
+        </section>        <section class="editor-section">
             <h2 class="section-title">味彩を彩る編集者たち</h2>
             <div class="editors-grid">
                 <div class="editor-card">
@@ -261,10 +354,35 @@
                 </div>
             </div>
         </section>
-    </main>
+    </main>    <!-- フッターコンポーネント -->
+    <div id="footer-placeholder"></div>
     
-    <!-- フッターコンポーネント -->
-    <site-footer></site-footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // フッターコンポーネントの内容を設定
+            const footerPlaceholder = document.getElementById('footer-placeholder');
+            if (footerPlaceholder) {
+                footerPlaceholder.innerHTML = footerHTML;
+                
+                // 年を現在の年に更新
+                const yearElement = document.querySelector('#current-year');
+                if (yearElement) {
+                    const currentYear = new Date().getFullYear();
+                    yearElement.textContent = currentYear;
+                }
+                
+                // 最終更新日を設定
+                const updateElement = document.querySelector('#last-update');
+                if (updateElement) {
+                    const today = new Date();
+                    const year = today.getFullYear();
+                    const month = today.getMonth() + 1;
+                    const day = today.getDate();
+                    updateElement.textContent = `${year}年${month}月${day}日`;
+                }            }
+        });
+    </script>
+    
     <script src="../../js/header.js" defer></script>
     <script src="../../js/footer.js" defer></script>
 </body>

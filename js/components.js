@@ -49,8 +49,7 @@ function loadComponent(elementId, url) {
 const footerHTML = `
 <footer>
     <div class="footer-container">
-        <div class="footer-section">
-            <h3>レシピサイト</h3>
+        <div class="footer-section">            <h3>味彩（あじさい）</h3>
             <p>美味しいレシピと最新フード情報をお届けします</p>
         </div>
         <div class="footer-section">
@@ -72,7 +71,7 @@ const footerHTML = `
         </div>
     </div>
     <div class="copyright">
-        <p>&copy; <span id="current-year">2025</span> レシピサイト ニュース編集部 All Rights Reserved.</p>
+        <p>&copy; <span id="current-year">2025</span> 味彩（あじさい） ニュース編集部 All Rights Reserved.</p>
         <p>最終更新：<span id="last-update">2025年6月20日</span></p>
     </div>
 </footer>
@@ -119,32 +118,33 @@ const commentFormHTML = `
 </div>
 `;
 
-// ページ読み込み完了時にフッターとコメントフォームを挿入する
+// ページ読み込み完了時にコメントフォームを挿入する
 document.addEventListener('DOMContentLoaded', function() {
-    // フッターの挿入
-    const footerPlaceholder = document.getElementById('footer-placeholder');
-    if (footerPlaceholder) {
-        footerPlaceholder.innerHTML = footerHTML;
-        
-        // 年を現在の年に更新
-        const yearElement = footerPlaceholder.querySelector('#current-year');
-        if (yearElement) {
-            const currentYear = new Date().getFullYear();
-            yearElement.textContent = currentYear;
-        }
-        
-        // 最終更新日を設定
-        const updateElement = footerPlaceholder.querySelector('#last-update');
-        if (updateElement) {
-            const today = new Date();
-            const year = today.getFullYear();
-            const month = today.getMonth() + 1; // 月は0から始まるため+1
-            const day = today.getDate();
-            updateElement.textContent = `${year}年${month}月${day}日`;
-        }
-    } else {
-        console.error('Footer placeholder element not found');
-    }
+    // フッターの挿入は footer.js で処理するため、こちらでは行わない
+    // footer.jsとの競合を避けるため、フッター挿入処理を無効化
+    // const footerPlaceholder = document.getElementById('footer-placeholder');
+    // if (footerPlaceholder) {
+    //     footerPlaceholder.innerHTML = footerHTML;
+    //     
+    //     // 年を現在の年に更新
+    //     const yearElement = footerPlaceholder.querySelector('#current-year');
+    //     if (yearElement) {
+    //         const currentYear = new Date().getFullYear();
+    //         yearElement.textContent = currentYear;
+    //     }
+    //     
+    //     // 最終更新日を設定
+    //     const updateElement = footerPlaceholder.querySelector('#last-update');
+    //     if (updateElement) {
+    //         const today = new Date();
+    //         const year = today.getFullYear();
+    //         const month = today.getMonth() + 1; // 月は0から始まるため+1
+    //         const day = today.getDate();
+    //         updateElement.textContent = `${year}年${month}月${day}日`;
+    //     }
+    // } else {
+    //     console.error('Footer placeholder element not found');
+    // }
     
     // コメントフォームの挿入
     const commentPlaceholder = document.getElementById('comment-placeholder');

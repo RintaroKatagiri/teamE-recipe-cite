@@ -19,10 +19,24 @@ body {
     font-family: var(--main-fontfamily);
 }
 
+/* グローバルスタイル設定 */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* 背景色変更 */
+body {
+    background-color: var(--back-ground-color); /* ←お好きな色に変更 */
+}
+
 .works_img{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
+    /* gap: 1.5em; */
 }
 
 .works_img img{
