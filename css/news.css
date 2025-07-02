@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+/* 横スクロールバーを防止 */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: var(--main-fontfamily);
     line-height: 1.6;
@@ -20,6 +28,12 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* 画像やメディア要素が親要素をはみ出さないようにする */
+img, video, iframe, table {
+    max-width: 100%;
+    height: auto;
 }
 
 /* ヘッダーのスタイル */
@@ -74,6 +88,12 @@ main {
     background-color: white;
     border-radius: 32px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 画像や表などのメディア要素が画面幅を超えないようにする */
+main img, main table, main iframe, main video {
+    max-width: 100%;
+    height: auto;
 }
 
 /* 記事のスタイル */
