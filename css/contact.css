@@ -3,6 +3,7 @@
 }
 
 body {
+  font-family: var(--main-fontfamily);
   overflow-x: hidden;
   background-color: var(--back-ground-color);
   margin: 0;
